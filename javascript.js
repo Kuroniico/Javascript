@@ -43,5 +43,68 @@ function affiche2(){
 //-----Exo5-----\\
 
 function boucle(){
+    var tab = new Array(x);
+
+    for (var i=0;i<tab.length;i++)
+        {
+    tab[i]=i*i;
+        }
+    alert(tab);
+        }
+    function boucle2(){
+
+    var longueur=parseInt(prompt('Quelle est la longueur souhaitée du tableau?'));
+    var tab= new Array();
+
+    for (var i=0;i<longueur;i++)
+        {
+    tab[i]=i*i;
+        }
+    alert(tab);
+}
+//-----Exo6-----\\
+var tab = [-2,1,4];
+function soustrait(x){
+    x = prompt("Rentrez la valeur à soustraire");
+    if (x>=0) return (x-2); 
+    else return "Nombre négatif !";
+}
+function affiche3(){
+    alert(soustrait(tab[0]));
+    alert(soustrait(tab[tab.length-1]));
+}
+//-----Exo7-----\\
+function jourDeLaSemaine(){
+    var aujourdhui= new Date; 
+    jour=aujourdhui.getDay(); 
+    var jourFrancais ;
+    switch(jour){
+        case 0 : jourFrancais="dimanche";
+        break;
+
+        case 1 : jourFrancais="lundi";
+        break; 
+
+        case 2 : jourFrancais="mardi";
+        break;
+
+        case 3 : jourFrancais="mercredi";
+        break; 
+
+        case 4 : jourFrancais="jeudi";
+        break;
+
+        case 5 : jourFrancais="vendredi";
+        break;
+
+        case 6 : jourFrancais="samedi";
+        break;
+
+        default: jourFrancais="jour inexistant";
+        break; 
+    } 
+    alert("Nous sommes "+jourFrancais+".");
     
 }
+//-----Exo8-----\\
+
