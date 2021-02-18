@@ -62,7 +62,9 @@ function boucle(){
         }
     alert(tab);
 }
+
 //-----Exo6-----\\
+
 var tab = [-2,1,4];
 function soustrait(x){
     x = prompt("Rentrez la valeur à soustraire");
@@ -73,7 +75,9 @@ function affiche3(){
     alert(soustrait(tab[0]));
     alert(soustrait(tab[tab.length-1]));
 }
+
 //-----Exo7-----\\
+
 function jourDeLaSemaine(){
     var aujourdhui= new Date; 
     jour=aujourdhui.getDay(); 
@@ -106,5 +110,19 @@ function jourDeLaSemaine(){
     alert("Nous sommes "+jourFrancais+".");
     
 }
-//-----Exo8-----\\
+
+//-----Exo10-----\\
+
+function MouseRollover(MyImage){
+    MyImage.src = "Dio.jpg";
+}
+function MouseOut(MyImage){
+    MyImage.src = "Maxence.jpg";
+}
+
+//-----Exo11-----\\
+
+function modif_paragraphe(){
+    getElementById
+}
 
